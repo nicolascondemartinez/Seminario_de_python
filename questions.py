@@ -52,9 +52,9 @@ for _ in range(3):
             
             # Si el usuario no responde correctamente después de 2 intentos,
             # se muestra la respuesta correcta
-            else:
-                print("Incorrecto. La respuesta correcta es:")
-                print(answers[question_index][correct_answers_index[question_index]])
+    else:
+            print("Incorrecto. La respuesta correcta es:")
+            print(answers[question_index][correct_answers_index[question_index]])
 
     # Se imprime un blanco al final de la pregunta
     print()
