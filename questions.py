@@ -42,7 +42,7 @@ for question, answers, correct_answer in questions_to_ask:
     # El usuario tiene 2 intentos para responder correctamente
     for intento in range(2):
         user_answer = input("Respuesta: ")
-        if len(user_answer) > 1 or ord(user_answer) > 52 or ord(user_answer) < 49:
+        if len(user_answer) != 1 or ord(user_answer) > 52 or ord(user_answer) < 49:
             print("Respuesta no válida")
             sys.exit(1)
 
