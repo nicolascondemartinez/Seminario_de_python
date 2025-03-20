@@ -28,8 +28,8 @@ correct_answers_index = [1, 2, 0, 3, 1]
 # Puntaje del/de la jugador/a
 score = 0
 
-# Elijo 3 tuplas cualesquiera de la lista
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+# Elijo 3 tuplas distintas de la lista
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 
 # El usuario deberá contestar 3 preguntas
 for question, answers, correct_answer in questions_to_ask:
